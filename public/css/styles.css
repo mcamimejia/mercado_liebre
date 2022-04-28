@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color1: #eac926;
+  --color2: #03264c;
+  --color3: #1259c3;
+  --color4: #666;
+  --color5: #ebebeb;
+  --color6: #39b54a;
+}
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 0;
+  background-color: var(--color5);
+}
+header {
+  background-color: var(--color1);
+  background-size: contain;
+  padding: 10px;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo {
+  width: 50%;
+  margin: 0;
+}
+.barra {
+  width: 50%;
+  text-align: center;
+}
+.barraBusqueda {
+  color: var(--color4);
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: none;
+  width: 70%;
+}
+button.icono {
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: none;
+}
+.aviso {
+  margin: 10px auto;
+}
+nav {
+  display: none;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+  padding: 0;
+  color: black;
+  list-style-type: none;
+  text-align: left;
+  font-size: 15px;
+  margin: 5px;
+}
+.burguer-menu {
+  text-align: center;
+  display: block;
+  background-color: var(--color3);
+  color: white;
+  padding: 8px 10px;
+  border: 1px solid var(--color3);
+  border-radius: 5px;
+  margin: auto;
+  max-width: 40px;
+}
+.banner {
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--color4);
+  margin: 10px;
+}
+h3 {
+  font-size: 16px;
+  margin: 0;
+}
+p.titulo {
+  display: none;
+  font-size: 16px;
+  color: var(--color4);
+  margin: 5px;
+}
+p.precio {
+  font-size: 18px;
+  flex-grow: 0.3;
+  margin: 5px;
+}
+p.des {
+  font-size: 16px;
+  color: var(--color6);
+  flex-grow: 0.7;
+  margin: 5px;
+}
+footer {
+  text-align: center;
+  background-color: white;
+  margin: 5px;
+}
+footer i {
+  color: var(--color3);
+  margin: 10px;
+  font-size: 2em;
+}
+.details {
+  padding: 5px 50px;
+}
+main {
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+}
+article img {
+  width: 150px;
+}
+section article {
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-top: 1px solid var(--color5);
+  padding: 15px;
+  text-align: left;
+  position: relative;
+}
+div.info i {
+  display: block;
+  font-size: 16px;
+  color: var(--color6);
+  border: 1px solid var(--color6);
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: all 1000ms;
+}
+p.copyright {
+  text-align: left;
+  padding: 10px;
+}
+.cont1 {
+  display: flex;
+  width: 100%;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form div {
+  margin: 15px;
+  font-size: 16px;
+}
+form button {
+  margin: 5px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color3);
+  color: white;
+}
+.form-element {
+  display: block;
+  margin-top: 8px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+.sub {
+  font-weight: bold;
+  display: block;
+}
+.form-element2 {
+  display: block;
+  margin: 8px 5px;
+}
+input:invalid {
+  border: solid 1px red;
+}
+input:focus:invalid {
+  border: none;
+}
+
+article:hover .titulo {
+  display: block;
+}
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+article:hover i {
+  transform: rotate(-90deg);
+}
+form button:hover {
+  background-color: #0022aa;
+  cursor: pointer;
+}
+footer i:hover {
+  color: var(--color6);
+}
+
+@media (min-width: 769px) {
+  .burguer-menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 5px auto;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 200px;
+  }
+  .barra {
+    width: 250px;
+  }
+  .barraBusqueda {
+    width: 200px;
+  }
+  .aviso {
+    font-size: 18px;
+    max-width: 250px;
+    margin: 0;
+    text-align: right;
+  }
+  .header1 {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  .section1,
+  .section2 {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section article {
+    width: 30%;
+    margin: 50px;
+  }
+  .form-element {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  section article {
+    margin: 10px;
+    width: 200px;
+  }
+  .moreInfo {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
